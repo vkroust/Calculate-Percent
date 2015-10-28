@@ -6,10 +6,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Graphics;
+using Android.Graphics.Drawables;
 
 namespace CalculatePercent
 {
-	[Activity (Label = "CalculatePercent", Icon = "@drawable/icon")]
+	[Activity (Label = "CalculatePercent", Icon = "@drawable/percentIcon")]
 	public class MainActivity : Activity
 	{
 		
@@ -23,6 +25,12 @@ namespace CalculatePercent
 
 			var layout = FindViewById<LinearLayout> (Resource.Id.mainLayout);
 			layout.SetBackgroundColor (Android.Graphics.Color.AntiqueWhite);
+
+			ColorDrawable colorDrawable = new ColorDrawable (Color.WhiteSmoke);
+			this.ActionBar.SetBackgroundDrawable (colorDrawable);
+			this.ActionBar.
+
+
 
 			var listView = FindViewById<ListView> (Resource.Id.mainListView);
 
