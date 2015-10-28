@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/mainRowLayout">
+    <ImageView
+        p1:src="@android:drawable/ic_menu_gallery"
+        p1:layout_width="69.9dp"
+        p1:layout_height="73.7dp"
+        p1:id="@+id/calculationImage"
+        p1:layout_alignParentTop="true"
+        p1:layout_alignParentLeft="true" />
+    <TextView
+        p1:text="Medium Text"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/calculationImage"
+        p1:id="@+id/calculationTitleText"
+        p1:textColor="#ff0d0606"
+        p1:layout_marginLeft="5.0dp" />
+    <TextView
+        p1:text="Small Text"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toRightOf="@id/calculationImage"
+        p1:id="@+id/calculationDetailsText"
+        p1:layout_below="@id/calculationTitleText"
+        p1:textColor="#ff6b6666"
+        p1:layout_marginLeft="5.0dp" />
+</RelativeLayout>

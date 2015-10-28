@@ -48,6 +48,10 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashActivity.cs" />
+    <Compile Include="MainAdapter.cs" />
+    <Compile Include="Calculation.cs" />
+    <Compile Include="ViewHolder.cs" />
+    <Compile Include="CalculationData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -63,6 +67,22 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\percentIcon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\percentIcon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\percentIcon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\percentIcon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\percentIcon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\percent.png" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\layout\MainListRow.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Assets\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\images\percent.png" />
+    <AndroidAsset Include="Assets\images\discount.png" />
+    <AndroidAsset Include="Assets\images\tip.png" />
+  </ItemGroup>
 </Project>

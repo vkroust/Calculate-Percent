@@ -9,10 +9,10 @@ using Android.OS;
 
 namespace CalculatePercent
 {
-	[Activity (Label = "CalculatePercent", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "CalculatePercent", Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
+		
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -21,6 +21,12 @@ namespace CalculatePercent
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
+			var layout = FindViewById<LinearLayout> (Resource.Id.mainLayout);
+			layout.SetBackgroundColor (Android.Graphics.Color.AntiqueWhite);
+
+			var listView = FindViewById<ListView> (Resource.Id.mainListView);
+
+			listView.Adapter = new MainAdapter (this, CalculationData.Calculations);
 		}
 	}
 }

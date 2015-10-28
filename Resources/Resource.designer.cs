@@ -47,6 +47,12 @@ namespace CalculatePercent
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int percent = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int percentIcon = 2130837506;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -60,8 +66,26 @@ namespace CalculatePercent
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int myButton = 2131034112;
+			// aapt resource value: 0x7f060006
+			public const int SplashLayout = 2131099654;
+			
+			// aapt resource value: 0x7f060005
+			public const int calculationDetailsText = 2131099653;
+			
+			// aapt resource value: 0x7f060003
+			public const int calculationImage = 2131099651;
+			
+			// aapt resource value: 0x7f060004
+			public const int calculationTitleText = 2131099652;
+			
+			// aapt resource value: 0x7f060000
+			public const int mainLayout = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int mainListView = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int mainRowLayout = 2131099650;
 			
 			static Id()
 			{
@@ -78,6 +102,12 @@ namespace CalculatePercent
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int MainListRow = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Splash = 2130903042;
 			
 			static Layout()
 			{
@@ -104,6 +134,22 @@ namespace CalculatePercent
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int Theme_Splash = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
