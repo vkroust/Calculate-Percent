@@ -16,7 +16,7 @@ using Android.Graphics;
 
 namespace CalculatePercent
 {
-	public class PercentFragment : Fragment
+	public class DiscountFragment : Fragment
 	{
 		public override void OnCreate (Bundle savedInstanceState)
 		{
@@ -27,20 +27,20 @@ namespace CalculatePercent
 
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
-			var view = inflater.Inflate (Resource.Layout.Percent, container, false);
+			var view = inflater.Inflate (Resource.Layout.Discount, container, false);
 
-			var percent = view.FindViewById<EditText> (Resource.Id.percentEditText);
-			var value = view.FindViewById<EditText> (Resource.Id.percentValueEditText);
-			var result = view.FindViewById<TextView> (Resource.Id.percentResultValue);
-			var calculateButton = view.FindViewById<Button> (Resource.Id.percentCalculateButton);
+			var discount = view.FindViewById<EditText> (Resource.Id.discountEditText);
+			var price = view.FindViewById<EditText> (Resource.Id.priceEditText);
+			var finalPrice = view.FindViewById<TextView> (Resource.Id.discountResultValue);
+			var calculateButton = view.FindViewById<Button> (Resource.Id.discountCalculateButton);
 
-			percent.SetBackgroundColor (Color.Black);
-			value.SetBackgroundColor (Color.Black);
+			discount.SetBackgroundColor (Color.Black);
+			price.SetBackgroundColor (Color.Black);
 
 			//Get fragment's associated Activity context
 			Activity context = this.Activity;
 
-			result.Text = "---";
+			finalPrice.Text = "---";
 
 			calculateButton.Click+= (object sender, EventArgs e) => 
 			{
@@ -49,11 +49,11 @@ namespace CalculatePercent
 				imm.HideSoftInputFromWindow (context.CurrentFocus.WindowToken, 0);
 
 				try{
-					if ((!String.IsNullOrEmpty(percent.Text)&&(!String.IsNullOrEmpty(value.Text)))){
-						int prcnt = Convert.ToInt16 (percent.Text);
-						int vl = Convert.ToInt16 (value.Text);
-						double rslt = (double)(vl * prcnt) / 100;
-						result.Text = rslt.ToString();
+					if ((!String.IsNullOrEmpty(discount.Text)&&(!String.IsNullOrEmpty(price.Text)))){
+						int dscnt = Convert.ToInt16 (discount.Text);
+						int prc = Convert.ToInt16 (price.Text);
+						double rslt = (double)(prc * dscnt) / 100;
+						finalPrice.Text = (prc - rslt).ToString();
 					}
 					else
 					{

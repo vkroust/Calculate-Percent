@@ -43,15 +43,15 @@ namespace CalculatePercent
 			switch (e.Position) 
 			{
 			case 0:
-				intent.PutExtra ("Percent", 0);
+				intent.PutExtra ("CalculationType", 0);
 				StartActivity (intent);
 				break;
 			case 1:
-				intent.PutExtra ("Discount", 1);
+				intent.PutExtra ("CalculationType", 1);
 				StartActivity (intent);
 				break;
 			case 2:
-				intent.PutExtra ("Split the bill", 2);
+				intent.PutExtra ("CalculationType", 2);
 				StartActivity (intent);
 				break;
 			}

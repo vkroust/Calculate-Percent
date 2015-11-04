@@ -60,6 +60,7 @@
     <Compile Include="CalculationData.cs" />
     <Compile Include="PercentDrawer.cs" />
     <Compile Include="PercentFragment.cs" />
+    <Compile Include="DiscountFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,6 +87,8 @@
     <AndroidResource Include="Resources\layout\MainListRow.axml" />
     <AndroidResource Include="Resources\layout\PercentDrawer.axml" />
     <AndroidResource Include="Resources\layout\Percent.axml" />
+    <AndroidResource Include="Resources\layout\Discount.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\discount.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

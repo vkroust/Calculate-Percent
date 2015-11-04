@@ -24,14 +24,15 @@ namespace CalculatePercent
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerListView;
-		int calcNo = 0;
 
-		Fragment[] fragments = new Fragment[]{new PercentFragment()};
+		Fragment[] fragments = new Fragment[]{new PercentFragment(), new DiscountFragment()};
 		string[] calculationTitles = new string[]{"Percent","Discount","Split the bill"};
 
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
+
+			int calcNo = Intent.GetIntExtra("CalculationType",-1);
 
 			SetContentView (Resource.Layout.PercentDrawer);
 
