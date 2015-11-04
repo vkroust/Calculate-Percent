@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/percentLayout">
+    <TextView
+        p1:text="%"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/percentTextView"
+        p1:layout_marginTop="30dp"
+        p1:textSize="40dp"
+        p1:layout_alignParentTop="true"
+        p1:layout_toLeftOf="@+id/percentEditText"
+        p1:textColor="#ff0c0707" />
+    <EditText
+        p1:inputType="number"
+        p1:layout_width="150dp"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/percentEditText"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="40dp"
+        p1:layout_alignParentRight="true"
+        p1:layout_marginRight="50dp"
+        p1:layout_alignParentTop="true" />
+    <EditText
+        p1:inputType="number"
+        p1:layout_width="150dp"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@+id/percentEditText"
+        p1:id="@+id/valueEditText"
+        p1:layout_toRightOf="@+id/textView1"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="30dp"
+        p1:layout_alignParentRight="true"
+        p1:layout_marginRight="50dp" />
+    <TextView
+        p1:text="Value"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_toLeftOf="@+id/valueEditText"
+        p1:id="@+id/valueTextView"
+        p1:layout_below="@+id/percentTextView"
+        p1:layout_marginTop="20dp"
+        p1:textColor="#ff0d0b0b"
+        p1:textSize="30dp" />
+    <TextView
+        p1:text="Result"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView2"
+        p1:layout_toLeftOf="@+id/percentResultValue"
+        p1:layout_marginTop="60dp"
+        p1:textColor="#ff0b0404"
+        p1:textSize="30dp"
+        p1:layout_below="@+id/calculateButton" />
+    <TextView
+        p1:text="Large Text"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/percentResultValue"
+        p1:layout_alignParentRight="true"
+        p1:layout_marginTop="60dp"
+        p1:layout_marginRight="50dp"
+        p1:layout_marginLeft="40dp"
+        p1:textColor="#ff2e9e48"
+        p1:textSize="30dp"
+        p1:layout_below="@+id/calculateButton" />
+    <Button
+        p1:text="Calculate"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/valueEditText"
+        p1:id="@+id/calculateButton"
+        p1:layout_alignParentRight="true"
+        p1:layout_marginRight="50dp"
+        p1:layout_marginTop="50dp" />
+    <ImageView
+        p1:src="@drawable/percent"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_below="@id/percentResultValue"
+        p1:id="@+id/imageView1"
+        p1:layout_alignParentBottom="true"
+        p1:layout_centerHorizontal="true" />
+</RelativeLayout>

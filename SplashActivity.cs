@@ -14,7 +14,7 @@ using System.Threading;
 
 namespace CalculatePercent
 {
-	[Activity (Label = "Splash", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/Theme.Splash", NoHistory = true)]			
+	[Activity (Label = "Splash", MainLauncher = true, Icon = "@drawable/percentIcon", Theme = "@style/Theme.Splash", NoHistory = true)]			
 	public class SplashActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
